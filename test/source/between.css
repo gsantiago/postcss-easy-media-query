@@ -1,0 +1,5 @@
+@between 400px 600px {
+  .my-box {
+    width: 100%;
+  }
+}

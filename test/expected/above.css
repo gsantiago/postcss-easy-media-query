@@ -1,0 +1,5 @@
+@media screen and (min-width: 700px) {
+  .box {
+    background-color: blue;
+  }
+}

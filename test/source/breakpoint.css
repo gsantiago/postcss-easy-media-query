@@ -1,0 +1,27 @@
+@breakpoint md 768px;
+@breakpoint sm 400px;
+
+@above md {
+  .element {
+    display: inline-block;
+    margin: 15px;
+  }
+}
+
+@between sm md {
+  .element {
+    display: block;
+    margin: 5px;
+    font-size: 0.8em;
+  }
+}
+
+@below sm {
+  .element {
+    display: none;
+  }
+
+  .other-element {
+    float: none;
+  }
+}

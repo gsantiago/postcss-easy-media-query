@@ -1,0 +1,5 @@
+@above 700px {
+  .box {
+    background-color: blue;
+  }
+}

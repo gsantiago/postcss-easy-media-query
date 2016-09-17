@@ -1,0 +1,9 @@
+@below 1280px {
+  .test {
+    color: blue;
+  }
+
+  .box {
+    font-family: 'Arial';
+  }
+}

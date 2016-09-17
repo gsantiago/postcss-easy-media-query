@@ -1,0 +1,34 @@
+{
+  "name": "postcss-easy-media-query",
+  "version": "0.0.1",
+  "description": "Super easy media queries for PostCSS",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gsantiago/postcss-easy-media-query"
+  },
+  "keywords": [
+    "media",
+    "query",
+    "rupture",
+    "above",
+    "between",
+    "below",
+    "responsive",
+    "screen",
+    "variables",
+    "fast"
+  ],
+  "author": "Guilherme Santiago",
+  "license": "MIT",
+  "scripts": {
+    "test": "standard index.js && mocha"
+  },
+  "dependencies": {
+    "postcss": "^5.2.0"
+  },
+  "devDependencies": {
+    "glob": "^7.0.6",
+    "mocha": "^3.0.2",
+    "standard": "^8.0.0"
+  }
+}

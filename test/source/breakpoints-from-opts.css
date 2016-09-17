@@ -1,0 +1,11 @@
+@above tablet {
+  .element {
+    color: #fff;
+  }
+}
+
+@between mobile tablet {
+  .element {
+    color: #000;
+  }
+}
