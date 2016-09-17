@@ -16,7 +16,8 @@
     "responsive",
     "screen",
     "variables",
-    "fast"
+    "fast",
+    "postcss-plugin"
   ],
   "author": "Guilherme Santiago",
   "license": "MIT",
