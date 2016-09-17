@@ -51,7 +51,7 @@ You can also use `@breakpoint` to store breakpoints in variables:
 
 ## installation
 
-`npm install postcss-rupture --save-dev`
+`npm install postcss-easy-media-query --save-dev`
 
 ## tests
 
