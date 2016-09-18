@@ -4,7 +4,7 @@
 [![npm version](https://badge.fury.io/js/postcss-easy-media-query.svg)](http://badge.fury.io/js/postcss-easy-media-query)
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
-Postcss plugin for easily create media queries. Inspired by [Rupture]() syntax.
+Postcss plugin for easily create media queries. Inspired by [Rupture](https://github.com/jescalan/rupture) syntax.
 
 It makes available 4 at-rules:
 `@above`, `@between`, `@below` and `@breakpoint`:
