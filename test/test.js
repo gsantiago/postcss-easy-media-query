@@ -1,6 +1,6 @@
 var assert = require('assert')
 var postcss = require('postcss')
-var rupture = require('..')
+var easyMediaQuery = require('..')
 var fs = require('fs')
 var path = require('path')
 var glob = require('glob')
@@ -29,7 +29,7 @@ function matchExpected (file, done, opts) {
   var opts = opts || {}
   var src = fs.readFileSync(path.join(sourcePath, file), 'utf8')
   var expected = fs.readFileSync(path.join(expectedPath, file), 'utf8')
-  var result = postcss(rupture(opts)).process(src).css
+  var result = postcss(easyMediaQuery(opts)).process(src).css
   assert.strictEqual(result, expected)
   done()
 }
