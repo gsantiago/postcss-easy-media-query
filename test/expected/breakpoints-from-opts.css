@@ -1,10 +1,16 @@
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 801px) {
   .element {
     color: #fff;
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 800px) {
+@media screen and (max-width: 799px) {
+  .element {
+    color: #0f0;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 799px) {
   .element {
     color: #000;
   }

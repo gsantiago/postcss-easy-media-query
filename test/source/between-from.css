@@ -1,4 +1,4 @@
-@media screen and (min-width: 701px) {
+@between-from 400px 600px {
   .box {
     background-color: blue;
   }
