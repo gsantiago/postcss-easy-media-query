@@ -4,6 +4,12 @@
   }
 }
 
+@below tablet {
+  .element {
+    color: #0f0;
+  }
+}
+
 @between mobile tablet {
   .element {
     color: #000;

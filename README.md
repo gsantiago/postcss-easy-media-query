@@ -6,47 +6,55 @@
 
 Postcss plugin for easily create media queries. Inspired by [Rupture](https://github.com/jescalan/rupture) syntax.
 
-It makes available 4 at-rules:
-`@above`, `@between`, `@below` and `@breakpoint`:
+The plugin exposes the following media query at-rules:
+* `@above`
+* `@from-width` (min inclusive)
+* `@below`
+* `@to-width` (max inclusive)
+* `@between`
+* `@between-from` (min inclusive)
+* `@between-to` (max inclusive)
+
+And `@breakpoint` for defining a breakpoint.
+
+### Examples 
 
 ```css
-/* @media screen and (min-width: 768px) */
-@above 768px {
-  .box {
-    width: 25%;
-  }
-}
+@above 768px {}
+/* @media screen and (min-width: 769px) {} */
 
-/* @media screen and (min-width: 400px) and (max-width: 768px) */
-@between 400px 768px {
-  .box {
-    width: 50%;
-  }
-}
+@from-width 768px {}
+/* @media screen and (min-width: 768px) {} */
 
-/* @media screen and (max-width: 400px) */
-@below 400px {
-  .box {
-    width: 100%;
-  }
-}
+@below 400px {}
+/* @media screen and (max-width: 399px) {} */
+
+@to-width 400px {}
+/* @media screen and (max-width: 400px) {} */
+
+@between 400px 768px {}
+/* @media screen and (min-width: 401px) and (max-width: 767px) {} */
+
+@between-from 400px 768px {}
+/* @media screen and (min-width: 400px) and (max-width: 767px) {} */
+
+@between-to 400px 768px {}
+/* @media screen and (min-width: 400px) and (max-width: 768px) {} */
 ```
-
-You can also use `@breakpoint` to store breakpoints in variables:
 
 ```css
 @breakpoint md 768px;
 @breakpoint sm 400px;
 
 /* @media screen and (min-width: 768px) */
-@above md {
+@from-width md {
   .text {
     font-size: 2em;
   }
 }
 
-/* @media screen and (min-width: 400px) and (max-width: 768px) */
-@between sm md {
+/* @media screen and (min-width: 400px) and (max-width: 767px) */
+@between-from sm md {
   .text {
     font-size: 1.3em
   }
