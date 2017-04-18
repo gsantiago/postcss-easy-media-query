@@ -1,6 +1,6 @@
 {
   "name": "postcss-easy-media-query",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Super easy media queries for PostCSS",
   "repository": {
     "type": "git",
